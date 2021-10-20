@@ -5,7 +5,49 @@ body {
 }
 
 .container {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
     margin: 0 auto;
+    display: grid;
     max-width: 960px;
     width: 100%;
 }
+
+header {
+    padding: 1em;
+    width: 800px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  
+  h1{
+      text-align: left;
+      grid-column-start: 1;
+      grid-column-end: 3;
+  }
+
+  ul{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    display: flex;
+    
+  }
+
+  li {
+    list-style-type: none;
+    
+  }
+
+  li a{
+    padding-left: 20px;
+    text-decoration: none;
+  }
+
+
+
+  
