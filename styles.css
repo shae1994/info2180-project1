@@ -1,46 +1,87 @@
 /* Add your CSS to this file */
 body {
     margin: 0;
-    font-size: 16px;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
 .container {
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-template-rows: 1fr;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     max-width: 960px;
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
-.container > div {
-    grid-template-columns: auto auto auto auto auto auto;
+.overview-hero-image{
+    height: 200px;
+    width:  250px;
+    align-self:left;
+    display: flex;
+    padding-left: 70px;
+    padding-right: 10px;
+    justify-content: center;
+}
+
+.h2 overview-hero-text h2{
+    text-align:start;
+    display: flex;
+    padding-right: 50px;
+    padding-left: 70px;
+}
+
+.p .overview-hero{
+    text-align:start;
+    display: flex;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.overview-hero{
+    background-color: gray;
+    align-items: baseline;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: 1fr;
-    margin: 0 auto;
-    display: flex;
-    max-width: 960px;
-    width: 100%;
 }
 
-header  {
-    padding: 1em;
+.learn-about > .h2 {
     display: flex;
-    align-items: left;
-    padding-right: 1em;
+    padding-left: 2fr;
 }
-  
 
-  
+.learn-about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+header{
+    padding: 1.75em 0 ;
+}
+    
 h1{
     text-align: left;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    font-size: 18px;
+    padding-right: 30%;
 }
 
-.container ul{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1 ;
+
+header .container nav ul{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 
 li {
@@ -53,13 +94,6 @@ li a{
     text-decoration: none;
 }
 
-#main{
-    background-color: gray;
-    align-self: right;
-    grid-row-start: 1;
-    grid-row-start: 2;
-
-}
 
 
   
