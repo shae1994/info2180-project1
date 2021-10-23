@@ -28,60 +28,78 @@ body {
     justify-content: center;
 }
 
-.h2 overview-hero-text h2{
+.overview-hero-text h2{
     text-align:start;
     display: flex;
     padding-right: 50px;
     padding-left: 70px;
 }
 
-.p .overview-hero{
+.overview-hero p{
     text-align:start;
     display: flex;
     padding-right: 70px;
     padding-left: 70px;
 }
 
-.overview-hero{
+.overview-hero .container{
     background-color: gray;
-    align-items: baseline;
+    height: 180px;
+
 }
 
+.btn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    white-space: nowrap;
+    padding: 13px;
+}
 .cards{
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: 1fr;
 }
 
-.learn-about > .h2 {
-    display: flex;
-    padding-left: 2fr;
+.testing .container{
+    background-color: darkgreen;
+    padding: 100px;
 }
 
+/* LEARN ABOUT SECTIONS*/
 .learn-about .container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-bottom: 20px;
 }
 
-
-header{
-    padding: 1.75em 0 ;
+.learn-about > .h2 {
+    display: flex;
+    padding-left: 2fr;
+    padding-bottom: 20px;
 }
-    
+  
 h1{
     text-align: left;
     font-size: 18px;
     padding-right: 30%;
 }
 
-
+/* THE HEADER CONTENTS*/
 header .container nav ul{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between; 
+}
+
+header{
+    padding: 1em 0 ;
 }
 
 li {
@@ -89,8 +107,8 @@ li {
 }
 
 li a{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 27px;
+    padding-right: 27px;
     text-decoration: none;
 }
 
