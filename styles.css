@@ -103,8 +103,15 @@ article .img {
 }
 
 .testing .container{
-    background-color: darkgreen;
+    background-color: #4A5568;
     padding: 100px;
+    color: white;
+}
+
+.testing p{
+    padding-left: 0px;
+    padding-right: 40px;
+    justify-content: stretch;
 }
 
 /* LEARN ABOUT SECTIONS*/
@@ -118,10 +125,11 @@ article .img {
     padding-right: 100px;
 }
 
-.learn-about > .h2 {
+.learn-about h2 {
     display: flex;
-    padding-left: 2fr;
+    padding-left: 20px;
     padding-bottom: 20px;
+    color:#4CAF50;
 }
 
 
@@ -141,6 +149,11 @@ header .container nav ul{
     padding-right: 50px;
 }
 
+.stories h2{
+    color:#5A67D8;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
 header{
     padding: 1em 0 ;
     background-color: white;
@@ -185,26 +198,48 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 20px;
     padding-left: 75px;
+    padding-right: 75px;
 }
 
 .stories h3,p{
-    padding-left: 75px;
+    padding-left: 50px;
 }
 
+.stories p{
+    
+    padding-bottom: 20px;
+}
+.article-body a{
+    color: #5A67D8; 
+}
+
+.article-body p a{
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.article-body h3{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
 .stories .container img{
     border-radius: 25%;
     height: 150px;
     width: 150px;
+    
 }
 .stories .container article{
     display: flex;
+    padding:0px;
 }
 
 .stories article{
     padding-left: 75px;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 /*NEWSLETTER SECTION*/
