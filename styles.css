@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 *{margin: 0;
@@ -21,18 +22,23 @@ body {
 .overview-hero-image{
     height: 200px;
     width:  250px;
+    position: relative;
     align-self:left;
     display: flex;
+    padding-top: 20px;
     padding-left: 70px;
     padding-right: 10px;
     justify-content: center;
 }
 
-.overview-hero-text h2{
+.overview-hero h2{
     text-align:start;
     display: flex;
     padding-right: 50px;
     padding-left: 70px;
+    color:#48BB78;
+    font-size: 24px;
+
 }
 
 .overview-hero p{
@@ -43,8 +49,9 @@ body {
 }
 
 .overview-hero .container{
-    background-color: gray;
+    background-color:#E2E8F0;
     height: 180px;
+    padding: 30px;
 
 }
 
@@ -53,11 +60,40 @@ body {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: 1fr;
+    grid-gap: 15px;
+    padding-bottom: 20px;
+}
+
+
+
+.learn-about .container img{
+    height: 150px;
+    width: 150px;
+}
+
+article .img {
+    border-radius: 5px;
 }
 
 .card{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-left: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 20px;
+    border-color: #E2E8F0;
+    border-width: 4px;;
+    box-shadow:4px 7px rgba(0, 0, 255, .2);
+    padding-bottom: 15px;
+}
+
+.card p{
+    padding-left: 5px;
+    padding-left: 5px;
+} 
+
+.card-body h3{
+    color:#48BB78;
 }
 
 .testing .container{
@@ -70,6 +106,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 30px;
     padding-bottom: 20px;
     padding-left: 100px;
     padding-right: 100px;
@@ -80,7 +117,9 @@ body {
     padding-left: 2fr;
     padding-bottom: 20px;
 }
-  
+
+
+/* VANILLA TAGS*/
 h1{
     text-align: left;
     font-size: 18px;
@@ -97,6 +136,8 @@ header .container nav ul{
 
 header{
     padding: 1em 0 ;
+    background-color: white;
+    font-size: 18px;
 }
 
 li {
@@ -104,9 +145,14 @@ li {
 }
 
 li a{
-    padding-left: 27px;
-    padding-right: 27px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-decoration: none;
+    color:#6b7280
+}
+
+a:hover{
+    color:#5A67D8;
 }
 
 /*BUTTONS*/
@@ -122,12 +168,67 @@ li a{
     padding: 13px;
 }
 
+/*SECTION CSS*/
 .stories .container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 100px;
     padding-bottom: 20px;
+    padding-left: 75px;
+}
+
+.stories h3,p{
+    padding-left: 75px;
+}
+
+.stories .container img{
+    border-radius: 25%;
+    height: 150px;
+    width: 150px;
+}
+.stories .container article{
+    display: flex;
+}
+
+.stories article{
+    padding-left: 75px;
+}
+
+/*NEWSLETTER SECTION*/
+.newsletter .container{
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.newsletter h3{
+    align-items: center;
+    padding: 15px;
+}
+
+.newsletter p{
+    align-items: center;
+    padding: 15px;
+}
+
+.newsletter .formgroup{
+    align-items: center;
+    padding: 15px;
+}
+
+
+
+/*FOOTER*/
+footer {
+    background-color: red;
+    flex-direction: row;
+    align-self:flex-start;
+    padding:0px;
 }
 
 
