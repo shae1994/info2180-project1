@@ -3,31 +3,24 @@ $(document).ready(function () {
     // Listen to submit event on the <form> itself!
     $("form").submit(function(e) {
         e.preventDefault();
-        var email = $('#email').val();
-
-    if(email== ''){
+    
+    var email = $('#email').val();
+    console.log(email)
+    if(email== ""){
         $('#email').next().show();
         console.log("False")
+        $("message").text("Please enter a valid email.")
         return false;
-        
+    }else{
+        $(".message").text("Thank You! Your email address "+ email+ " has been added to our mailing list!")
     }
-    if(Email(email)==false){
-        $('#message').show();
-        console.log("False")
-        return false;
-    }
-      function Email(email) {
-        var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        if(!regex.test(email)) {
-            console.log("False")
-          return false;
-        }else{
-            console.log("True")
-          return true;
-        }
-      }
     });
 
+    
+
+    
+
+    
     
   });
 
